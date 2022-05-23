@@ -1,5 +1,6 @@
 const express = require('express');
 const needle = require('needle');
+const apiCache = require('apicache');
 const HttpError = require('../exceptions/HttpError');
 const router = express.Router();
 
@@ -7,7 +8,9 @@ const API_BASE_URL = process.env.API_BASE_URL;
 const API_KEY_NAME = process.env.API_KEY_NAME;
 const API_KEY_VALUE = process.env.API_KEY_VALUE;
 
-router.get('/weather', async (req, res) => {
+const cache = apiCache.middleware;
+
+router.get('/weather', cache('2 minutes'), async (req, res) => {
   try {
     const { location, units, language } = req.query;
     const params = new URLSearchParams({
