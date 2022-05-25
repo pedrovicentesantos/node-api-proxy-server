@@ -5,15 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/index.js" defer></script>
   </head>
-  <body>
-    <form>
-      <label for="location">Enter the desired location</label>
-      <input type="text" name="location" id="location" />
-      <button type="submit">Get Weather</button>
+  <body
+    class="w-screen h-screen bg-slate-300 p-4 grid grid-rows-2 md:max-w-screen-sm mx-auto"
+  >
+    <form class="mt-6">
+      <div class="grid gap-y-4 mb-4 text-center">
+        <label class="font-semibold" for="location">
+          Enter the desired location
+        </label>
+        <input
+          class="focus:outline-none p-1"
+          type="text"
+          name="location"
+          placeholder="Ex: Rio de Janeiro"
+          id="location"
+        />
+      </div>
+      <button class="w-full bg-sky-900 text-white py-1" type="submit">
+        Get Weather
+      </button>
     </form>
-    <div id="result"></div>
-    <script src="js/index.js"></script>
+    <div class="" id="result"></div>
   </body>
 </html>
