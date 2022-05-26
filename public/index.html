@@ -9,7 +9,7 @@
     <script src="js/index.js" defer></script>
   </head>
   <body
-    class="w-screen h-screen bg-slate-300 p-4 grid grid-rows-2 md:max-w-screen-sm mx-auto"
+    class="w-screen h-screen bg-slate-300 p-4 grid grid-rows-[150px_1fr] md:max-w-screen-sm mx-auto"
   >
     <form class="mt-6">
       <div class="grid gap-y-4 mb-4 text-center">
@@ -22,12 +22,13 @@
           name="location"
           placeholder="Ex: Rio de Janeiro"
           id="location"
+          required
         />
       </div>
       <button class="w-full bg-sky-900 text-white py-1" type="submit">
         Get Weather
       </button>
     </form>
-    <div class="" id="result"></div>
+    <div class="text-center mt-6" id="result"></div>
   </body>
 </html>
