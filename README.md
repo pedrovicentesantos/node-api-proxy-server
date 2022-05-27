@@ -15,3 +15,7 @@ O deploy foi feito no Heroku e pode ser acessado em:
 ## Rodando a aplicação
 
 Basta instalar as dependências, adicionar as variáveis apropriadas no arquivo `.env` e executar o comando `npm run dev` para rodar a aplicação. Feito isso a aplicação estará disponível em [http://localhost:5000](http://localhost:5000).
+
+## BFF
+
+Além de chamar a API do OpenWeatherMap com a chave de API correta, o BFF também possui configurado rate limiting para evitar que o usuário faça muitas requisições. Além disso, para melhorar a performance, está configurado um cache para as requisições.
