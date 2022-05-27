@@ -6,6 +6,12 @@ Como a API do OpenWeatherMap necessita de uma chave de API, foi desenvolvido um 
 
 Para a estilização foi utilizado o [TailwindCSS](https://tailwindcss.com/docs/installation).
 
+Desenvolvido baseado no seguinte [vídeo do YouTube](https://www.youtube.com/watch?v=ZGymN8aFsv4).
+
+O deploy foi feito no Heroku e pode ser acessado em:
+
+[https://weather-app-api-proxy-server.herokuapp.com](https://weather-app-api-proxy-server.herokuapp.com)
+
 ## Rodando a aplicação
 
 Basta instalar as dependências, adicionar as variáveis apropriadas no arquivo `.env` e executar o comando `npm run dev` para rodar a aplicação. Feito isso a aplicação estará disponível em [http://localhost:5000](http://localhost:5000).
