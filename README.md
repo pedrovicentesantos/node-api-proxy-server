@@ -8,9 +8,9 @@ Para a estilização foi utilizado o [TailwindCSS](https://tailwindcss.com/docs/
 
 Desenvolvido baseado no seguinte [vídeo do YouTube](https://www.youtube.com/watch?v=ZGymN8aFsv4).
 
-O deploy foi feito no Heroku e pode ser acessado em:
+O deploy foi feito no [Railway](https://railway.app) e pode ser acessado em:
 
-[https://weather-app-api-proxy-server.herokuapp.com](https://weather-app-api-proxy-server.herokuapp.com)
+[https://weather-app-api-proxy-server.up.railway.app](https://weather-app-api-proxy-server.up.railway.app)
 
 ## Rodando a aplicação
 
